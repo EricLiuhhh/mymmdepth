@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mmdepth
+Version: 0.0.1
+Summary: My codebase for depth completion/estimation(based on MM-series)
+Home-page: https://github.com/jackliuhhh123/mymmdepth
+Author: Eric Liu
+Author-email: liuhs3@mail.ustc.edu.cn
+License: Apache License 2.0
+Keywords: computer vision,depth completion,depth estimation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+UNKNOWN
+

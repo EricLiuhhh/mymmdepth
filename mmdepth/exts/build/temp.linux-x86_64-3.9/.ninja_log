@@ -1,0 +1,5 @@
+# ninja log v5
+0	16053	1706586075858743385	/home/lhs/depth_est_comp/GuideNet/exts/build/temp.linux-x86_64-3.9/guideconv_kernel.o	d49712b7df3193d3
+0	18815	1706586078634825997	/home/lhs/depth_est_comp/GuideNet/exts/build/temp.linux-x86_64-3.9/guideconv.o	9dbf84f5046d1e13
+1	10513	1706588473645360371	/home/lhs/depth_est_comp/mmdepth/exts/build/temp.linux-x86_64-3.9/guideconv_kernel.o	97c81c7329299f
+0	14449	1706588477593489027	/home/lhs/depth_est_comp/mmdepth/exts/build/temp.linux-x86_64-3.9/guideconv.o	1f61e86117fbb673
