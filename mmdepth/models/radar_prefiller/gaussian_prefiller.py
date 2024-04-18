@@ -31,8 +31,8 @@ class GaussianPrefiller(BaseModule):
         coords = inputs['voxels']['coords']
         bs = len(data_samples)
         for b in range(bs):
-            #batch_mask = coords[:, 0]==b
-            points, image = inputs['points'][b][:,:3], inputs['img'][b]
+            batch_mask = coords[:, 0]==b
+            points, image = inputs['points'][batch_mask,:3], inputs['img'][b]
             uvs, depth, filtered_mask = project_pcl_to_image(
                 points,
                 inputs['extrinsic'][b][0],
@@ -44,7 +44,7 @@ class GaussianPrefiller(BaseModule):
             colors = np.zeros([points.shape[0], 3])
             colors[filtered_mask.cpu().numpy()] = image[:, uvs[:, 1], uvs[:, 0]].T.cpu().numpy()
             points = BasicPointCloud(points=points.cpu().numpy(), colors=colors, normals=np.zeros([points.shape[0], 3]))
-            self.gaussian.create_from_pcd(points, 1)
+            self.gaussian.create_from_pcd2(points, 1)
 
             # scale, rot, opacity(optional, 0 or 1)
             # normal, img_feat, pts_feat -> rot, scale

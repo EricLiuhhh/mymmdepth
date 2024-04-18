@@ -14,7 +14,7 @@ def inverse_sigmoid(x):
 class GaussianDepth(BaseCompletor):
     def __init__(self, 
                  point_encoder: ConfigType,
-                 #img_encoder: ConfigType,
+                 # img_encoder: ConfigType,
                  prefiller: ConfigType,
                  data_preprocessor = None, 
                  init_cfg = None):
